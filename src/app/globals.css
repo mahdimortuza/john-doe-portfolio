@@ -79,3 +79,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* custom styling for any other interactions */
+.active {
+  background-color: red;
+}
