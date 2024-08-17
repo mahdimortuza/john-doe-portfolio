@@ -2,7 +2,6 @@
 import assets from "@/assets";
 import Image from "next/image";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Container from "../Container";
 
 const Navbar = () => {
   // const options = {
@@ -16,8 +15,8 @@ const Navbar = () => {
 
   // animateScroll.scrollToTop(options);
   return (
-    <Container className="my-[24px]">
-      <nav className="flex justify-between items-center fixed">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50  shadow-lg ">
+      <div className="max-w-[1290px] px-[10px] mx-auto flex justify-between items-center">
         <Image
           className="cursor-pointer"
           onClick={scrollToTop}
@@ -25,14 +24,10 @@ const Navbar = () => {
           alt="logo"
         />
         <ul className="flex gap-[40px]">
-          <Link
-            to="home"
-            smooth={true}
-            activeClass="active"
-            spy={true}
-            className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer"
-          >
-            Home
+          <Link to="home" smooth={true} activeClass="active" spy={true}>
+            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+              Home
+            </li>
           </Link>
 
           <Link to="about" smooth={true} activeClass="active" spy={true}>
@@ -65,8 +60,8 @@ const Navbar = () => {
             Contact me
           </button>
         </Link>
-      </nav>
-    </Container>
+      </div>
+    </nav>
   );
 };
 
