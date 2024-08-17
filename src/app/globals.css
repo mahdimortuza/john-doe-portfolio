@@ -82,5 +82,5 @@
 
 /* custom styling for any other interactions */
 .active {
-  background-color: red;
+  border-bottom: 3px solid black;
 }
