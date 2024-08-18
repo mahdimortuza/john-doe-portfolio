@@ -66,6 +66,7 @@ const config = {
       fontFamily: {
         vietnam: ["var(--font-be-vietnam-pro)"],
         dmSans: ["var(--font-dm-sans)"],
+        outfit: ["var(--font-outfit)"],
       },
       borderRadius: {
         lg: "var(--radius)",
