@@ -63,6 +63,10 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        vietnam: ["var(--font-be-vietnam-pro)"],
+        dmSans: ["var(--font-dm-sans)"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
