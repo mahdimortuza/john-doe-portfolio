@@ -1,28 +1,9 @@
 import assets from "@/assets";
 import Container from "@/components/Container";
-import Image from "next/image";
-
 import CustomHoverBtn from "@/components/ui/customHoverBtn";
+import { beVietnamPro, dmSans, outfit } from "@/components/ui/fonts";
 import { Plus } from "lucide-react";
-import { Be_Vietnam_Pro, DM_Sans, Outfit } from "next/font/google";
-
-const beVietnamPro = Be_Vietnam_Pro({
-  subsets: ["vietnamese"],
-  variable: "--font-be-vietnam-pro",
-  weight: ["400", "500", "600", "700"],
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-  weight: ["400", "500", "600", "700"],
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  weight: ["400", "500", "600", "700"],
-});
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
