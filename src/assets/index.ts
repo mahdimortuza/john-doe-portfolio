@@ -30,5 +30,18 @@ const assets = {
     css: require("../assets/services-images/css.svg"),
     pen: require("../assets/services-images/pen.svg"),
   },
+  projectsImages: {
+    sassLandingPage: require("../assets/products-images/sass-landing-page.jpeg"),
+    eduCationPlatform: require("../assets/products-images/education-platform.jpeg"),
+    mobileApp: require("../assets/products-images/mobile-app.jpeg"),
+    furnitureLandingPage: require("../assets/products-images/farniture-landing.jpeg"),
+    dogWalkingApp: require("../assets/products-images/dog-walking-app.jpeg"),
+    coffeeLandingPage: require("../assets/products-images/coffee-landing-page.jpeg"),
+    bankingApp: require("../assets/products-images/app-3.png"),
+    dashboard1: require("../assets/products-images/dashboard-1.jpeg"),
+    dashboard2: require("../assets/products-images/dashboard-2.jpeg"),
+    webDesign: require("../assets/products-images/web-design-1.png"),
+    mobileApp2: require("../assets/products-images/mobile-app.jpeg"),
+  },
 };
 export default assets;
