@@ -15,13 +15,13 @@ const SectionTitle = ({ title, subTitle, description }: TTitle) => {
         {title}
       </h3>
       <h1
-        className={`${beVietnamPro.className} font-vietnam font-semibold capitalize text-themeBlack text-[28px] md:text-[54px]`}
+        className={`${beVietnamPro.className} mt-[9px] font-vietnam font-semibold capitalize text-themeBlack text-[28px] md:text-[54px]`}
       >
         {subTitle}
       </h1>
       {description ? (
         <p
-          className={`${dmSans.className} font-dmSans text-themeGray text-[14px] md:text-[18px] font-normal leading-[150%] mx-auto lg:w-[58ch] capitalize`}
+          className={`${dmSans.className} mt-[15px] font-dmSans text-themeGray text-[14px] md:text-[18px] font-normal leading-[150%] mx-auto lg:w-[58ch] capitalize`}
         >
           {description}
         </p>

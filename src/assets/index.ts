@@ -22,5 +22,13 @@ const assets = {
     dribble: require("../assets/client-logos/logos_dribbble.svg"),
     fiver: require("../assets/client-logos/fiver.svg"),
   },
+  servicesImages: {
+    code: require("../assets/services-images/code.svg"),
+    magnifying: require("../assets/services-images/magnifying.svg"),
+    www: require("../assets/services-images/www.svg"),
+    html: require("../assets/services-images/html.svg"),
+    css: require("../assets/services-images/css.svg"),
+    pen: require("../assets/services-images/pen.svg"),
+  },
 };
 export default assets;

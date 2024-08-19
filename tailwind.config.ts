@@ -42,6 +42,9 @@ const config = {
         themeBlack: {
           DEFAULT: "hsl(var(--theme-black))",
         },
+        themeLightBlue: {
+          DEFAULT: "hsl(var(--theme-light-blue))",
+        },
 
         // john doe portfolio custom colors ends here
 
