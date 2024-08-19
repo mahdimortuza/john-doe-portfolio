@@ -15,5 +15,12 @@ const assets = {
   aboutImages: {
     profilePicture: require("../assets/about-images/profile-image.jpeg"),
   },
+  clientLogos: {
+    google: require("../assets/client-logos/logos_google.svg"),
+    upWork: require("../assets/client-logos/logos_upwork.svg"),
+    linkedin: require("../assets/client-logos/logos_linkedin.svg"),
+    dribble: require("../assets/client-logos/logos_dribbble.svg"),
+    fiver: require("../assets/client-logos/fiver.svg"),
+  },
 };
 export default assets;

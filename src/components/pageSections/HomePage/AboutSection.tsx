@@ -7,16 +7,16 @@ import Image from "next/image";
 const AboutSection = () => {
   return (
     <div className=" bg-themeBgColor">
-      <Container className="my-10">
+      <Container className="">
         <div
           id="about"
           className="py-[60px] lg:py-[120px] flex items-center flex-col-reverse lg:flex-row gap-[30px] md:gap-[75px]"
         >
-          <div>
+          <div className="relative">
             <Image
               src={assets.aboutImages.profilePicture}
               alt="profile-image"
-              className="w-[380px] h-[240px] md:w-[650px] md:h-[510px] object-cover rounded-[18px]"
+              className="clip-path-wave w-[380px] h-[240px] md:w-[650px] md:h-[510px] object-cover rounded-[18px]"
             />
           </div>
 
