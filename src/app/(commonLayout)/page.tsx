@@ -1,4 +1,3 @@
-import Container from "@/components/Container";
 import AboutSection from "@/components/pageSections/HomePage/AboutSection";
 import BlogsSection from "@/components/pageSections/HomePage/BlogsSection";
 import ClientSection from "@/components/pageSections/HomePage/ClientSection";
@@ -11,7 +10,7 @@ import TestimonialSection from "@/components/pageSections/HomePage/TestimonialSe
 
 export default function Home() {
   return (
-    <Container>
+    <main>
       <HeroSection />
       <AboutSection />
       <ClientSection />
@@ -21,6 +20,6 @@ export default function Home() {
       <ContactSection />
       <BlogsSection />
       <NewsletterSection />
-    </Container>
+    </main>
   );
 }

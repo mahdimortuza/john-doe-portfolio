@@ -12,5 +12,8 @@ const assets = {
     image3: require("../assets/hero-images/customer-3.jpeg"),
     image4: require("../assets/hero-images/customer-4.jpeg"),
   },
+  aboutImages: {
+    profilePicture: require("../assets/about-images/profile-image.jpeg"),
+  },
 };
 export default assets;

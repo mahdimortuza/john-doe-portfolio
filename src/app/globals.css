@@ -18,6 +18,7 @@
     /* john doe portfolio custom colors starts here  */
     --theme-blue: 229 100% 65%;
     --theme-gray: 231 9% 28%;
+    --them-bg-color: 229, 78%, 98%;
     /* john doe portfolio custom colors ends here  */
 
     --muted: 210 40% 96.1%;
@@ -51,6 +52,7 @@
     /* john doe portfolio custom colors starts here  */
     --theme-blue: 229 100% 65%;
     --theme-gray: 229 9% 28%;
+    --them-bg-color: 229, 78%, 98%;
 
     /* john doe portfolio custom colors ends here  */
 
@@ -83,4 +85,17 @@
 /* custom styling for any other interactions */
 .active {
   border-bottom: 3px solid black;
+}
+
+/* Custom CSS to style the marker */
+.custom-list > li::marker {
+  font-size: 1.5rem;
+  color: #2563eb;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-list > li::marker {
+    font-size: 1.2rem;
+    color: #2563eb;
+  }
 }
