@@ -1,7 +1,11 @@
 import assets from "@/assets";
 import Container from "@/components/Container";
 import BlogCard from "@/components/ui/blogCard";
+import { beVietnamPro } from "@/components/ui/fonts";
 import SectionTitle from "@/components/ui/sectionTitle";
+import { Separator } from "@/components/ui/separator";
+import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
 const blogs = [
   {
@@ -64,7 +68,7 @@ const BlogsSection = () => {
 
         {/* blog posts  */}
 
-        <div>
+        <div className="mt-[45px] lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
           {blogs.slice(0, 3).map((item) => (
             <BlogCard
               key={item._id}
@@ -75,6 +79,17 @@ const BlogsSection = () => {
               date={item.date}
             />
           ))}
+        </div>
+
+        <Separator className="mt-[68px]" />
+        <div className="flex justify-end mt-[15px]">
+          <Link
+            href="/"
+            className={`${beVietnamPro.className} font-vietnam text-[#1A1A1A] text-[18px] font-normal flex gap-[10px] items-center justify-center w-[140px]`}
+          >
+            <span>View Blogs</span>
+            <MoveRight />
+          </Link>
         </div>
       </Container>
     </div>
