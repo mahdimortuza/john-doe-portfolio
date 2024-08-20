@@ -167,7 +167,7 @@ const ProjectsSection = () => {
                     />
                   </div>
                   <h1
-                    className={`${beVietnamPro.className} font-vietnam text-[26px] pb-[24px] pr-[40px] relative z-10 bg-themeBgColor w-[320px]`}
+                    className={`${beVietnamPro.className} font-vietnam text-[26px] pb-[24px] pr-[40px] relative z-10 bg-themeBgColor w-[320px] capitalize`}
                   >
                     {items.title}
                   </h1>

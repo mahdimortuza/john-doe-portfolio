@@ -43,5 +43,13 @@ const assets = {
     webDesign: require("../assets/products-images/web-design-1.png"),
     mobileApp2: require("../assets/products-images/mobile-app.jpeg"),
   },
+  reviewImages: {
+    image1: require("../assets/hero-images/customer-1.jpeg"),
+    image2: require("../assets/hero-images/customer-2.jpeg"),
+    image3: require("../assets/hero-images/customer-3.jpeg"),
+    image4: require("../assets/hero-images/customer-4.jpeg"),
+    image5: require("../assets/hero-images/profile-img.jpeg"),
+    image6: require("../assets/hero-images/sdwddw.jpeg"),
+  },
 };
 export default assets;
