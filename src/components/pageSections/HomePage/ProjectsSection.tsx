@@ -133,7 +133,7 @@ const categories = [
 const ProjectsSection = () => {
   return (
     <div id="projects" className="bg-themeBgColor">
-      <Container className="my-[60px] md:py-[100px]">
+      <Container className="py-[60px] md:py-[100px]">
         <SectionTitle title="Projects" subTitle="digital product showcase" />
 
         <Tabs

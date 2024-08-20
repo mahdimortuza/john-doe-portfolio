@@ -69,7 +69,7 @@ const reviews = [
 
 const TestimonialSection = () => {
   return (
-    <Container className="">
+    <Container className="py-[100px]">
       <SectionTitle title="testimonial" subTitle="what my customer says" />
 
       {/* slider starts here  */}

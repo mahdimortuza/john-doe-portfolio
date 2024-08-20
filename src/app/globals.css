@@ -97,22 +97,23 @@
   color: #2563eb;
 }
 
-.clip-path-wave {
-  /* clip-path: polygon(
-    52% 26%,
-    54% 27%,
-    52% 26%,
-    52% 26%,
-    56% 34%,
-    63% 38%,
-    70% 41%,
-    100% 42%,
-    100% 100%,
-    0 100%,
-    0 0,
-    52% 0,
-    52% 17%
-  ); */
+.PhoneInputInput {
+  /* The phone number input stretches to fill all empty space */
+  flex: 1;
+  min-width: 0;
+  background-color: hsl(229, 78%, 98%);
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+}
+
+.PhoneInput {
+  gap: 0px;
+}
+
+.PhoneInputCountry {
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+  background-color: hsl(229, 78%, 98%);
 }
 
 @media only screen and (max-width: 600px) {
