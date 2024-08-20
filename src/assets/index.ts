@@ -51,5 +51,10 @@ const assets = {
     image5: require("../assets/hero-images/profile-img.jpeg"),
     image6: require("../assets/hero-images/sdwddw.jpeg"),
   },
+  blogImages: {
+    image1: require("../assets/blogs-image/1.png"),
+    image2: require("../assets/blogs-image/2.avif"),
+    image3: require("../assets/blogs-image/3.avif"),
+  },
 };
 export default assets;
