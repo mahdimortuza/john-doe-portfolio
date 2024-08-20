@@ -1,9 +1,12 @@
 "use client";
 import assets from "@/assets";
 import Container from "@/components/Container";
+import { beVietnamPro } from "@/components/ui/fonts";
 import SectionTitle from "@/components/ui/sectionTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const products = [
   {
@@ -104,36 +107,77 @@ const products = [
   },
 ];
 
+const categories = [
+  {
+    name: "All",
+    value: "All",
+  },
+  {
+    name: "Landing Page",
+    value: "Landing Page",
+  },
+  {
+    name: "Web Design",
+    value: "Web Design",
+  },
+  {
+    name: "Dashboard",
+    value: "Dashboard",
+  },
+  {
+    name: "App Design",
+    value: "App Design",
+  },
+];
+
 const ProjectsSection = () => {
   return (
     <div id="projects" className="bg-themeBgColor">
       <Container className="my-[60px] md:py-[100px]">
         <SectionTitle title="Projects" subTitle="digital product showcase" />
 
-        <Tabs defaultValue="All">
+        <Tabs
+          defaultValue="All"
+          className="flex flex-col items-center gap-[90px] mt-[16px]"
+        >
           {/* Tab buttons */}
           <TabsList>
-            <TabsTrigger value="All">ALL</TabsTrigger>
-            <TabsTrigger value="Landing Page">Landing Page</TabsTrigger>
-            <TabsTrigger value="Web Design">Web Design</TabsTrigger>
-            <TabsTrigger value="Dashboard">Dashboard</TabsTrigger>
-            <TabsTrigger value="App Design">App Design</TabsTrigger>
+            {categories.map((item) => (
+              <TabsTrigger
+                key={item.name}
+                value={item.value}
+                className="rounded-full text-black  border-[1px] ml-[8px] md:ml-[16px] border-themeGray text-[12px] md:text-[18px] font-normal capitalize px-[16px] py-[7px] md:px-[26px] md:py-[10px]"
+              >
+                {item.name}
+              </TabsTrigger>
+            ))}
           </TabsList>
 
           {/* Tab contents */}
-          <div className="grid grid-cols-3 bg-red-500">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px]">
             {products.map((items) => (
-              <TabsContent key={items._id} value={items.category}>
-                <div className="relative">
-                  <Image
-                    src={items.image}
-                    alt="img"
-                    width={400}
-                    height={400}
-                    layout="fit"
-                    objectFit="cover"
-                  />
-                  <h2 className="absolute top-1 bg-white p-2">{items.title}</h2>
+              <TabsContent key={items._id} value={items.category} className="">
+                <div className="relative w-[312px] h-[348px] lg:w-[400px] lg:h-[446px] overflow-hidden rounded-[18px] shadow-lg">
+                  <div className="absolute inset-0 transform transition-transform duration-500 hover:scale-105">
+                    <Image
+                      src={items.image}
+                      alt="bg-img"
+                      fill={true}
+                      className="object-cover"
+                    />
+                  </div>
+                  <h1
+                    className={`${beVietnamPro.className} font-vietnam text-[26px] pb-[24px] pr-[40px] relative z-10 bg-themeBgColor w-[320px]`}
+                  >
+                    {items.title}
+                  </h1>
+
+                  {/* project link button  */}
+                  <div className=" absolute z-10 bottom-0 right-0 bg-white p-[8px]">
+                    <Link href={items._id}>
+                      <ArrowUpRight className="bg-black p-[6px] rounded-full text-white w-[30px] h-[30px] md:w-[38px] md:h-[38px]" />
+                    </Link>
+                  </div>
                 </div>
               </TabsContent>
             ))}
