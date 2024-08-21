@@ -1,21 +1,26 @@
 import AboutSection from "@/components/pageSections/HomePage/AboutSection";
+import BlogsSection from "@/components/pageSections/HomePage/BlogsSection";
 import ClientSection from "@/components/pageSections/HomePage/ClientSection";
+import ContactSection from "@/components/pageSections/HomePage/ContactSection";
 import HeroSection from "@/components/pageSections/HomePage/HeroSection";
 import ProjectsSection from "@/components/pageSections/HomePage/ProjectsSection";
-import ServicesSection from "@/components/pageSections/HomePage/ServicesSection";
+import TestimonialSection from "@/components/pageSections/HomePage/TestimonialSection";
 
 export default function Home() {
   return (
-    <main>
+    <div>
+      {/* <TestSection /> */}
       <HeroSection />
       <AboutSection />
       <ClientSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <ProjectsSection />
-      {/*  <TestimonialSection />
+      {/* <TestSection /> */}
+
+      <TestimonialSection />
       <ContactSection />
       <BlogsSection />
-      <NewsletterSection /> */}
-    </main>
+      {/*  <NewsletterSection /> */}
+    </div>
   );
 }

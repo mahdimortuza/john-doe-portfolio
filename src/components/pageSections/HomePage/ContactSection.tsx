@@ -29,7 +29,7 @@ const ContactSection = () => {
   return (
     <div id="contact" className=" bg-themeBgColor">
       <Container className=" ">
-        <div className="py-[100px] flex ">
+        <div className="py-[100px] flex flex-col xl:flex-row gap-[40px] items-center justify-center xl:gap-0">
           {/* left side contents here */}
           <div className="mt-[70px]">
             <h3
@@ -95,15 +95,15 @@ const ContactSection = () => {
           </div>
 
           {/* right side contents here */}
-          <div className="bg-white px-[54px] py-[70px] rounded-[15px]">
+          <div className="bg-white px-[10px] lg:px-[54px] py-[20px] lg:py-[70px] rounded-[15px]">
             <h2
-              className={`${beVietnamPro.className} font-vietnam text-[26px] font-semibold capitalize`}
+              className={`${beVietnamPro.className} font-vietnam text-[18px] lg:text-[26px] font-semibold capitalize`}
             >
               contact me
             </h2>
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="mt-[36px] flex flex-col gap-[22px]"
+              className="mt-[24px] lg:mt-[36px] flex flex-col gap-[16px] lg:gap-[22px]"
             >
               <div>
                 <h3
@@ -115,7 +115,7 @@ const ContactSection = () => {
                   <IoPersonSharp className="absolute left-3 top-[32px] transform -translate-y-1/2 text-gray-500" />
                   <input
                     placeholder="Name"
-                    className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal px-[18px] py-[10px] pl-[40px] bg-themeBgColor rounded-[8px] w-[510px]`}
+                    className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal px-[18px] py-[10px] pl-[40px] bg-themeBgColor rounded-[8px] w-[350px] md:w-[510px]`}
                     {...register("example")}
                   />
                 </div>
@@ -131,7 +131,7 @@ const ContactSection = () => {
                   <IoMdMail className="absolute left-3 top-[32px] transform -translate-y-1/2 text-gray-500" />
                   <input
                     placeholder="Email"
-                    className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal px-[18px] py-[10px] pl-[40px] bg-themeBgColor rounded-[8px] w-[510px]`}
+                    className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal px-[18px] py-[10px] pl-[40px] bg-themeBgColor rounded-[8px] w-[350px] md:w-[510px]`}
                     {...register("example")}
                   />
                 </div>
@@ -151,7 +151,7 @@ const ContactSection = () => {
                   defaultCountry="US"
                   control={control}
                   rules={{ required: true }}
-                  className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal w-[510px]`}
+                  className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal w-[350px] md:w-[510px]`}
                 />
               </div>
 
@@ -164,7 +164,7 @@ const ContactSection = () => {
                 <div className="">
                   <textarea
                     placeholder="Type here"
-                    className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal px-[18px] py-[18px]  bg-themeBgColor rounded-[8px] w-[510px]`}
+                    className={`${dmSans.className} font-dmSans mt-[10px] text-[16px] font-normal px-[18px] py-[18px]  bg-themeBgColor rounded-[8px] w-[350px] md:w-[510px]`}
                     rows={4}
                     {...register("example")}
                   />

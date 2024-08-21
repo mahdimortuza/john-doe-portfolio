@@ -68,7 +68,7 @@ const BlogsSection = () => {
 
         {/* blog posts  */}
 
-        <div className="mt-[45px] lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-[45px] lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center items-center">
           {blogs.slice(0, 3).map((item) => (
             <BlogCard
               key={item._id}
