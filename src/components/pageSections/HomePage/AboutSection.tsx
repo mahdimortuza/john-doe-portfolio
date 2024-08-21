@@ -10,7 +10,7 @@ const AboutSection = () => {
       <Container className="">
         <div
           id="about"
-          className="py-[60px] lg:py-[120px] flex items-center flex-col-reverse lg:flex-row gap-[30px] md:gap-[75px]"
+          className="py-[60px] lg:py-[120px] flex xl:items-end flex-col-reverse items-center lg:flex-row gap-[30px] md:gap-[75px]"
         >
           <div className="relative">
             <Image
@@ -21,14 +21,29 @@ const AboutSection = () => {
           </div>
 
           {/* right side content  */}
-          <div className="flex flex-col gap-[26px]">
+          <div className="flex flex-col gap-0 xl:gap-[26px] relative">
+            {/* elegant section header  */}
+            <div className="xl:absolute md:-left-[240px] -top-[110px] md:bg-themeBgColor xl:pl-[40px] lg:pb-[15px] lg:rounded-bl-[50px]">
+              <h3
+                className={`${beVietnamPro.className} font-vietnam text-center md:text-left text-[14px] md:text-[20px] font-medium capitalize text-themeBlue`}
+              >
+                about
+              </h3>
+
+              <h1
+                className={`${beVietnamPro.className} mt-[0px] text-center md:text-left font-vietnam font-medium capitalize text-themeBlack text-[24px] md:text-[58px]`}
+              >
+                7 years of
+              </h1>
+            </div>
+
             <h1
-              className={`${beVietnamPro.className} font-vietnam text-[32px] md:text-[65px] font-medium`}
+              className={`${beVietnamPro.className} font-vietnam text-center md:text-left text-[32px] md:text-[65px] font-medium`}
             >
               Experience
             </h1>
             <p
-              className={`${dmSans.className} font-dmSans text-themeGray text-[14px] md:text-[18px] leading-[150%] text-center md:text-left md:capitalize md:w-[45ch]`}
+              className={`${dmSans.className} font-dmSans mt-[8px] md:mt-[0px] text-themeGray text-[14px] md:text-[18px] leading-[150%] text-center md:text-left md:capitalize md:w-[45ch]`}
             >
               With over 7 years of experience, I specialize in crafting UI/UX
               designs and developing websites that are visually compelling,
@@ -38,7 +53,7 @@ const AboutSection = () => {
             {/* bullet ul elements  */}
 
             <ul
-              className={`${beVietnamPro.className} font-vietnam custom-list list-disc pl-5 text-themeGray text-[14px] md:text-[18px] leading-[150%] capitalize`}
+              className={`${beVietnamPro.className} font-vietnam mt-[16px] lg:mt-[16px] mx-auto md:ml-0 custom-list list-disc pl-5 text-themeGray text-[14px] md:text-[18px] leading-[150%] capitalize`}
             >
               <li className="mt-[0px]">
                 Intuitive, user-centered interface design
@@ -51,7 +66,7 @@ const AboutSection = () => {
               </li>
             </ul>
             <Button
-              className={`${beVietnamPro.className} font-vietnam w-[200px] px-[26px] py-[20px] text-[18px] rounded-full bg-inherit hover:bg-inherit text-themeBlue border-2 border-themeBlue flex gap-[10px] group hover:text-black hover:border-black`}
+              className={`${beVietnamPro.className} font-vietnam w-[200px] mx-auto mt-[16px] lg::mt-0 lg:ml-0 px-[26px] py-[20px] text-[18px] rounded-full bg-inherit hover:bg-inherit text-themeBlue border-2 border-themeBlue flex gap-[10px] group hover:text-black hover:border-black`}
             >
               <span className="group-hover:text-black">Download CV</span>
               <span>

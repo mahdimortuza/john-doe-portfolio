@@ -29,28 +29,33 @@ const ClientSection = () => {
               className="w-[300px] sm:w-[400px] md:w-[600px] lg:w-[800px] xl:w-[1000px]"
             >
               <Image
-                className="ml-[48px]"
+                className="ml-[40px]"
                 src={assets.clientLogos.google}
                 alt="logo"
               />
               <Image
-                className="ml-[48px]"
+                className="ml-[40px]"
                 src={assets.clientLogos.upWork}
                 alt="logo"
               />
               <Image
-                className="ml-[48px]"
+                className="ml-[40px]"
                 src={assets.clientLogos.linkedin}
                 alt="logo"
               />
               <Image
-                className="ml-[48px]"
+                className="ml-[40px]"
                 src={assets.clientLogos.dribble}
                 alt="logo"
               />
               <Image
-                className="ml-[48px]"
+                className="ml-[40px]"
                 src={assets.clientLogos.fiver}
+                alt="logo"
+              />
+              <Image
+                className="ml-[40px]"
+                src={assets.clientLogos.linkedin}
                 alt="logo"
               />
             </Marquee>

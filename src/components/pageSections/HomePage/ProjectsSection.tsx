@@ -2,6 +2,7 @@
 import assets from "@/assets";
 import Container from "@/components/Container";
 import { beVietnamPro } from "@/components/ui/fonts";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import SectionTitle from "@/components/ui/sectionTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowUpRight } from "lucide-react";
@@ -23,13 +24,13 @@ const products = [
   },
   {
     _id: "3",
-    title: "litigation mobile app",
+    title: "litigation app",
     category: "App Design",
     image: assets.projectsImages.mobileApp,
   },
   {
     _id: "4",
-    title: "furniture landing page",
+    title: "furniture website",
     category: "Landing Page",
     image: assets.projectsImages.furnitureLandingPage,
   },
@@ -83,13 +84,13 @@ const products = [
   },
   {
     _id: "13",
-    title: "litigation mobile app",
+    title: "litigation mobile",
     category: "All",
     image: assets.projectsImages.mobileApp,
   },
   {
     _id: "14",
-    title: "furniture landing page",
+    title: "furniture website",
     category: "All",
     image: assets.projectsImages.furnitureLandingPage,
   },
@@ -138,23 +139,26 @@ const ProjectsSection = () => {
 
         <Tabs
           defaultValue="All"
-          className="flex flex-col items-center gap-[90px] mt-[16px]"
+          className="flex flex-col items-center gap-[90px] mt-[16px] w-full"
         >
-          {/* Tab buttons */}
-          <TabsList>
-            {categories.map((item) => (
-              <TabsTrigger
-                key={item.name}
-                value={item.value}
-                className="rounded-full text-black  border-[1px] ml-[8px] md:ml-[16px] border-themeGray text-[12px] md:text-[18px] font-normal capitalize px-[16px] py-[7px] md:px-[26px] md:py-[10px]"
-              >
-                {item.name}
-              </TabsTrigger>
-            ))}
+          {/* Tab buttons with horizontal scroll */}
+          <TabsList className=" ">
+            <ScrollArea className="w-[360px] md:w-full whitespace-nowrap rounded-md ">
+              {categories.map((item) => (
+                <TabsTrigger
+                  key={item.name}
+                  value={item.value}
+                  className="rounded-full text-black border-[1px] mx-[4px] md:mx-[8px] border-themeGray text-[12px] md:text-[18px] font-normal capitalize px-[16px] py-[7px] md:px-[26px] md:py-[10px] whitespace-nowrap"
+                >
+                  {item.name}
+                </TabsTrigger>
+              ))}
+              <ScrollBar orientation="horizontal" />
+            </ScrollArea>
           </TabsList>
 
           {/* Tab contents */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px] w-full justify-items-center items-center">
             {products.map((items) => (
               <TabsContent key={items._id} value={items.category} className="">
                 <div className="relative w-[312px] h-[348px] lg:w-[400px] lg:h-[446px] overflow-hidden rounded-[18px] shadow-lg">
@@ -166,16 +170,19 @@ const ProjectsSection = () => {
                       className="object-cover"
                     />
                   </div>
-                  <h1
-                    className={`${beVietnamPro.className} font-vietnam text-[26px] pb-[24px] pr-[40px] relative z-10 bg-themeBgColor w-[320px] capitalize`}
+                  <span
+                    className={`${beVietnamPro.className} title-bg font-vietnam -top-1 rounded-br-[20px] text-[26px] pl-[5px] pb-[24px] pr-[40px] relative z-10 bg-themeBgColor capitalize`}
+                    style={{
+                      boxShadow: "inset -5px 0 10px -2px rgba(0, 0, 0, 0.3)",
+                    }}
                   >
                     {items.title}
-                  </h1>
+                  </span>
 
                   {/* project link button  */}
-                  <div className=" absolute z-10 bottom-0 right-0 bg-white p-[8px]">
+                  <div className="absolute z-10 bottom-0 right-0 bg-white rounded-tl-[30px] p-[15px]">
                     <Link href={items._id}>
-                      <ArrowUpRight className="bg-black p-[6px] rounded-full text-white w-[30px] h-[30px] md:w-[38px] md:h-[38px]" />
+                      <ArrowUpRight className="bg-black p-[6px] rounded-full text-white w-[40px] h-[40px] md:w-[38px] md:h-[38px]" />
                     </Link>
                   </div>
                 </div>

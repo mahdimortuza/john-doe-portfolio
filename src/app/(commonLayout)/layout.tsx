@@ -6,7 +6,8 @@ const CommonLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <div>
-        <Navbar /> {children} <Footer />
+        <Navbar /> {children} 
+        {/* <Footer /> */}
       </div>
     </>
   );

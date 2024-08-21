@@ -96,7 +96,7 @@ const HeroSection = () => {
           </div>
 
           {/* statistics number  */}
-          <div className="flex flex-col gap-[22px] md:gap-[30px] absolute -right-[5px] md:-right-[80px] pl-[8px] md:pl-[28px] pt-[10px] md:pt-[38px] bottom-0 bg-white rounded-ss-[25px] md:rounded-ss-[40px]">
+          <div className="flex flex-col gap-[22px] md:gap-[30px] absolute -right-[5px] xl:-right-[80px] pl-[8px] md:pl-[28px] pt-[10px] md:pt-[38px] bottom-0 bg-white rounded-ss-[25px] md:rounded-ss-[40px]">
             <div className="flex flex-col gap-[0px]">
               <h2 className=" text-[22px] md:text-[32px] font-semibold">
                 355+

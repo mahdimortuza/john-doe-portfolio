@@ -60,7 +60,7 @@ const ServicesSection = () => {
         />
 
         {/* service cards sections  */}
-        <div className="py-[48px] md:py-[82px] grid md:grid-cols-2 lg:grid-cols-3 gap-[48px] lg:gap-[70px]">
+        <div className="py-[48px] md:py-[82px] grid md:grid-cols-2 lg:grid-cols-3 gap-[48px] justify-center  lg:gap-[70px]">
           {/* single card here  */}
 
           {services.map((item) => (
