@@ -9,19 +9,19 @@ const NewsletterSection = () => {
       <Container>
         <div className="text-center">
           <h1
-            className={`${beVietnamPro.className} font-vietnam text-[45px] font-semibold capitalize text-white`}
+            className={`${beVietnamPro.className} font-vietnam text-[28px] md:text-[45px] font-semibold capitalize text-white`}
           >
             subscribe to my <span className="text-themeBlue">newsletter</span>
           </h1>
           <p
-            className={`${dmSans.className} font-dmSans text-themeBgColor text-[18px] font-normal mx-auto mt-[18px] w-[60ch]`}
+            className={`${dmSans.className} font-dmSans text-themeBgColor text-[14px] md:text-[18px] font-normal mx-auto mt-[18px] lg:w-[60ch]`}
           >
             Stay updated with our newsletter for the latest trends, tips, and
             insights in UI/UX design and web development.
           </p>
 
           {/* email subscription input */}
-          <div className="relative w-[625px] mt-[45px] mx-auto">
+          <div className="relative w-[350px] md:w-[625px] mt-[45px] mx-auto">
             <IoMdMail className="absolute left-3 top-[32px] transform -translate-y-1/2 text-gray-500" />
             <input
               placeholder="hello@yourmail.com"

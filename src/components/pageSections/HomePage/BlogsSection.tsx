@@ -66,9 +66,8 @@ const BlogsSection = () => {
           description="Explore insights and trends in UI/UX design and web development through our latest blogs and articles."
         />
 
-        {/* blog posts  */}
-
-        <div className="mt-[45px] lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center items-center">
+        {/* Blog posts */}
+        <div className="mt-[45px] lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-[20px] gap-y-[40px] justify-items-center">
           {blogs.slice(0, 3).map((item) => (
             <BlogCard
               key={item._id}

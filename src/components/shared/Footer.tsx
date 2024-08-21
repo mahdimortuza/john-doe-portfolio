@@ -2,6 +2,7 @@ import assets from "@/assets";
 import Image from "next/image";
 import Container from "../Container";
 import { beVietnamPro, dmSans } from "../ui/fonts";
+import { Separator } from "../ui/separator";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <Container>
         <div>
           <ul
-            className={`${beVietnamPro.className} font-vietnam text-themeMenu flex gap-[40px] items-center justify-center`}
+            className={`${beVietnamPro.className} font-vietnam text-themeMenu hidden md:flex gap-[40px] items-center justify-center  `}
           >
             <li>Home</li>
             <li>About</li>
@@ -18,15 +19,17 @@ const Footer = () => {
             <li>Blogs</li>
           </ul>
 
+          <Separator className="mt-[24px]" />
+
           {/* footer foot  */}
-          <div className="flex justify-between  items-center mt-[46px]">
+          <div className="flex flex-col-reverse md:flex-row justify-center mx-auto items-center lg:gap-[150px] xl:gap-[240px] mt-[46px]">
             <p
               className={`${dmSans.className} font-dmSans text-[16px] font-normal text-themeMenu capitalize`}
             >
               2024 John Doe All Right Reserved
             </p>
             <Image
-              className="cursor-pointer"
+              className="cursor-pointer hidden lg:flex"
               src={assets.logos.footerLogo}
               alt="logo"
             />
