@@ -6,7 +6,7 @@ import { Separator } from "../ui/separator";
 
 const Footer = () => {
   return (
-    <div className="pt-[60px] pb-[32px] bg-themeBlack">
+    <div className="pt-[24px] xl:pt-[60px] pb-[20px] md:pb-[32px] bg-themeBlack">
       <Container>
         <div>
           <ul
@@ -19,10 +19,10 @@ const Footer = () => {
             <li>Blogs</li>
           </ul>
 
-          <Separator className="mt-[24px]" />
+          <Separator className=" lg:mt-[24px]" />
 
           {/* footer foot  */}
-          <div className="flex flex-col-reverse md:flex-row justify-center mx-auto items-center lg:gap-[150px] xl:gap-[240px] mt-[46px]">
+          <div className="flex flex-col-reverse md:flex-row justify-center mx-auto items-center lg:gap-[150px] xl:gap-[240px] mt-[20px] lg:mt-[46px]">
             <p
               className={`${dmSans.className} font-dmSans text-[16px] font-normal text-themeMenu capitalize`}
             >

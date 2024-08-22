@@ -108,7 +108,10 @@ const Navbar = () => {
           </Link>
 
           <Link to="services" smooth={true} activeClass="active" spy={true}>
-            <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
+            <li
+              onClick={handleNav}
+              className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer"
+            >
               Services
             </li>
           </Link>

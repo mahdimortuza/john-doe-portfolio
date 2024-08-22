@@ -133,63 +133,72 @@ const categories = [
 
 const ProjectsSection = () => {
   return (
-    <div id="projects" className="bg-themeBgColor">
-      <Container className="py-[60px] md:py-[100px]">
-        <SectionTitle title="Projects" subTitle="digital product showcase" />
+    <div className="bg-themeBgColor py-[60px] md:py-[100px]">
+      <Container className="">
+        <div id="projects">
+          <SectionTitle title="Projects" subTitle="digital product showcase" />
 
-        <Tabs
-          defaultValue="All"
-          className="flex flex-col items-center gap-[90px] mt-[16px] w-full"
-        >
-          {/* Tab buttons with horizontal scroll */}
-          <TabsList className=" ">
-            <ScrollArea className="w-[360px] md:w-full whitespace-nowrap rounded-md ">
-              {categories.map((item) => (
-                <TabsTrigger
-                  key={item.name}
-                  value={item.value}
-                  className="rounded-full text-black border-[1px] mx-[4px] md:mx-[8px] border-themeGray text-[12px] md:text-[18px] font-normal capitalize px-[16px] py-[7px] md:px-[26px] md:py-[10px] whitespace-nowrap"
-                >
-                  {item.name}
-                </TabsTrigger>
-              ))}
-              <ScrollBar orientation="horizontal" />
-            </ScrollArea>
-          </TabsList>
-
-          {/* Tab contents */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px] w-full justify-items-center items-center">
-            {products.map((items) => (
-              <TabsContent key={items._id} value={items.category} className="">
-                <div className="relative w-[312px] h-[348px] lg:w-[400px] lg:h-[446px] overflow-hidden rounded-[18px] shadow-lg">
-                  <div className="absolute inset-0 transform transition-transform duration-500 hover:scale-105">
-                    <Image
-                      src={items.image}
-                      alt="bg-img"
-                      fill={true}
-                      className="object-cover"
-                    />
-                  </div>
-                  <span
-                    className={`${beVietnamPro.className} title-bg font-vietnam -top-1 rounded-br-[20px] text-[26px] pl-[5px] pb-[24px] pr-[40px] relative z-10 bg-themeBgColor capitalize`}
-                    style={{
-                      boxShadow: "inset -5px 0 10px -2px rgba(0, 0, 0, 0.3)",
-                    }}
+          {/*  */}
+          <Tabs
+            defaultValue="All"
+            className="flex flex-col items-center w-full gap-[10px] md:gap-[50px] mt-[10px] md:mt-[50px]"
+          >
+            {/* Tab buttons with horizontal scroll */}
+            <TabsList className=" ">
+              <ScrollArea className="w-[360px] md:w-full whitespace-nowrap rounded-md ">
+                {categories.map((item) => (
+                  <TabsTrigger
+                    key={item.name}
+                    value={item.value}
+                    className="rounded-full text-black border-[1px] mx-[4px] md:mx-[8px] border-themeGray text-[12px] md:text-[18px] font-normal capitalize px-[16px] py-[7px] md:px-[26px] md:py-[10px] whitespace-nowrap"
                   >
-                    {items.title}
-                  </span>
+                    {item.name}
+                  </TabsTrigger>
+                ))}
+                <ScrollBar orientation="horizontal" />
+              </ScrollArea>
+            </TabsList>
 
-                  {/* project link button  */}
-                  <div className="absolute z-10 bottom-0 right-0 bg-white rounded-tl-[30px] p-[15px]">
-                    <Link href={items._id}>
-                      <ArrowUpRight className="bg-black p-[6px] rounded-full text-white w-[40px] h-[40px] md:w-[38px] md:h-[38px]" />
-                    </Link>
+            {/*   */}
+
+            {/* Tab contents */}
+            <div className="grid grid-cols-1 mt-[0px] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px] w-full justify-items-center items-center">
+              {products.map((items) => (
+                <TabsContent
+                  key={items._id}
+                  value={items.category}
+                  className=""
+                >
+                  <div className="relative w-[312px] h-[348px] lg:w-[400px] lg:h-[446px] overflow-hidden rounded-[18px] shadow-lg">
+                    <div className="absolute inset-0 transform transition-transform duration-500 hover:scale-105">
+                      <Image
+                        src={items.image}
+                        alt="bg-img"
+                        fill={true}
+                        className="object-cover"
+                      />
+                    </div>
+                    <span
+                      className={`${beVietnamPro.className} title-bg font-vietnam -top-1 rounded-br-[20px] text-[26px] pl-[5px] pb-[24px] pr-[40px] relative z-10 bg-themeBgColor capitalize`}
+                      style={{
+                        boxShadow: "inset -5px 0 10px -2px rgba(0, 0, 0, 0.3)",
+                      }}
+                    >
+                      {items.title}
+                    </span>
+
+                    {/* project link button  */}
+                    <div className="absolute z-10 bottom-0 right-0 bg-white rounded-tl-[30px] p-[15px]">
+                      <Link href={items._id}>
+                        <ArrowUpRight className="bg-black p-[6px] rounded-full text-white w-[40px] h-[40px] md:w-[38px] md:h-[38px]" />
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </TabsContent>
-            ))}
-          </div>
-        </Tabs>
+                </TabsContent>
+              ))}
+            </div>
+          </Tabs>
+        </div>
       </Container>
     </div>
   );

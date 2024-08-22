@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div id="home" className="bg-red-500">
+    <div id="home">
       <Container
-        className={`my-10 mt-[96px] ${beVietnamPro.variable} font-vietnam`}
+        className={`mt-[40px] lg:mt-[96px] ${beVietnamPro.variable} font-vietnam`}
       >
         <div className="py-[80px] flex flex-col lg:flex-row gap-[35px] items-center">
           <div className="flex flex-col gap-[32px]">
@@ -33,7 +33,7 @@ const HeroSection = () => {
               </h1>
             </div>
             <p
-              className={`${dmSans.variable} font-dmSans text-[18px] font-medium leading-[150%] text-themeGray text-center md:text-left md:w-[45ch]`}
+              className={`${dmSans.variable} font-dmSans text-[14px] md:text-[18px] font-medium leading-[150%] text-themeGray text-center md:text-left md:w-[45ch]`}
             >
               Designing sleek, user-centric websites that engage and convert. I
               blend creativity with technology to create intuitive digital
@@ -108,23 +108,24 @@ const HeroSection = () => {
 
               <div className="flex flex-col gap-[0px]">
                 <h2 className=" text-[22px] md:text-[32px] font-semibold">
-                  355+
+                  200+
                 </h2>
                 <p
                   className={`${dmSans.variable} text-[11px] md:text-[16px] font-dmSans text-themeGray font-normal`}
                 >
-                  Completed Projects
+                  Product Launched
                 </p>
               </div>
 
               <div className="flex flex-col gap-[0px]">
                 <h2 className=" text-[22px] md:text-[32px] font-semibold">
-                  355+
+                  96%
                 </h2>
                 <p
                   className={`${dmSans.variable} text-[11px] md:text-[16px] font-dmSans text-themeGray font-normal`}
                 >
-                  Completed Projects
+                  {" "}
+                  Positive Reviews
                 </p>
               </div>
             </div>

@@ -9,7 +9,7 @@ export type TServices = {
 };
 const ServiceCard = ({ _id, icon, title, description }: TServices) => {
   return (
-    <div className="w-[370px] text-center hover:bg-themeHoverBackground transition duration-500 group cursor-pointer">
+    <div className="w-[360px] lg:w-[320px] xl:w-[370px] text-center hover:bg-themeHoverBackground transition duration-500 group cursor-pointer">
       <Image
         src={icon}
         alt="icon"

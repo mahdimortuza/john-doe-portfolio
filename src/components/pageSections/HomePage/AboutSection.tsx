@@ -10,7 +10,7 @@ const AboutSection = () => {
       <Container className="">
         <div
           id="about"
-          className="py-[60px] lg:py-[120px] flex xl:items-end flex-col-reverse items-center lg:flex-row gap-[30px] md:gap-[75px]"
+          className="py-[58px] lg:py-[120px] flex xl:items-end flex-col-reverse items-center lg:flex-row gap-[30px] md:gap-[75px]"
         >
           <div className="relative">
             <Image

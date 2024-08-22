@@ -69,12 +69,12 @@ const reviews = [
 
 const TestimonialSection = () => {
   return (
-    <Container className="py-[100px]">
+    <Container className="py-[60px] md:py-[100px]">
       <SectionTitle title="testimonial" subTitle="what my customer says" />
 
       {/* slider starts here  */}
       {/* [738px] */}
-      <div className="w-full xl:w-[1000px] mx-auto">
+      <div className="w-full xl:w-[1000px] mx-auto mt-[0px]">
         <Carousel className="">
           <CarouselContent>
             {reviews.map((item) => (

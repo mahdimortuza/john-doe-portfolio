@@ -27,11 +27,11 @@ const ContactSection = () => {
 
   const [value, setValue] = useState();
   return (
-    <div id="contact" className=" bg-themeBgColor">
+    <div id="contact" className="py-[60px] md:py-[100px] bg-themeBgColor">
       <Container className=" ">
-        <div className="py-[100px] flex flex-col xl:flex-row gap-[40px] items-center justify-center xl:gap-0">
+        <div className=" flex flex-col xl:flex-row gap-[40px] items-center justify-center xl:gap-0">
           {/* left side contents here */}
-          <div className="mt-[70px]">
+          <div className="mt-[0px]">
             <h3
               className={`${beVietnamPro.className} font-vietnam text-[14px] md:text-[20px] font-medium capitalize text-themeBlue`}
             >
@@ -50,7 +50,7 @@ const ContactSection = () => {
             </p>
 
             {/* const number and email  */}
-            <div className="mt-[54px] flex flex-col gap-[54px]">
+            <div className="mt-[30px] md:mt-[54px] flex flex-col gap-[16px] md:gap-[54px]">
               <div className="flex flex-col gap-[14px]">
                 <div className="flex gap-[16px]">
                   <FaPhone className="h-[24px] w-[24px] text-black" />

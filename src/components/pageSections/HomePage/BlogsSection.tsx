@@ -12,7 +12,7 @@ const blogs = [
     _id: 1,
     title: "Expert Tips for Creating Stunning User Interfaces",
     description:
-      "20 essential tips for creating impactful and user-friendly UI designs...",
+      "20 essential tips for creating impactful and user-friendly UI designs. 20 essential tips for creating impactful and user-friendly UI designs. 20 essential tips for creating impactful and user-friendly UI designs",
     image: assets.blogImages.image1,
     date: "05/08/2024",
   },
@@ -58,37 +58,39 @@ const blogs = [
 
 const BlogsSection = () => {
   return (
-    <div id="blogs" className="">
-      <Container className="py-[100px]">
-        <SectionTitle
-          title="blogs"
-          subTitle="latest blogs and articles"
-          description="Explore insights and trends in UI/UX design and web development through our latest blogs and articles."
-        />
+    <div className="py-[60px] md:py-[100px]">
+      <Container className="">
+        <div id="blogs">
+          <SectionTitle
+            title="blogs"
+            subTitle="latest blogs and articles"
+            description="Explore insights and trends in UI/UX design and web development through our latest blogs and articles."
+          />
 
-        {/* Blog posts */}
-        <div className="mt-[45px] lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-[20px] gap-y-[40px] justify-items-center">
-          {blogs.slice(0, 3).map((item) => (
-            <BlogCard
-              key={item._id}
-              _id={item._id}
-              title={item.title}
-              description={item.description}
-              image={item.image}
-              date={item.date}
-            />
-          ))}
-        </div>
+          {/* Blog posts */}
+          <div className="mt-[45px] lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-[20px] gap-y-[40px] justify-items-center">
+            {blogs.slice(0, 3).map((item) => (
+              <BlogCard
+                key={item._id}
+                _id={item._id}
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                date={item.date}
+              />
+            ))}
+          </div>
 
-        <Separator className="mt-[68px]" />
-        <div className="flex justify-end mt-[15px]">
-          <Link
-            href="/"
-            className={`${beVietnamPro.className} font-vietnam text-[#1A1A1A] text-[18px] font-normal flex gap-[10px] items-center justify-center w-[140px]`}
-          >
-            <span>View Blogs</span>
-            <MoveRight />
-          </Link>
+          <Separator className="mt-[68px]" />
+          <div className="flex justify-end mt-[15px]">
+            <Link
+              href="/"
+              className={`${beVietnamPro.className} font-vietnam text-[#1A1A1A] text-[18px] font-normal flex gap-[10px] items-center justify-center w-[140px]`}
+            >
+              <span>View Blogs</span>
+              <MoveRight />
+            </Link>
+          </div>
         </div>
       </Container>
     </div>

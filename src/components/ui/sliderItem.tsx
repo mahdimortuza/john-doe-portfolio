@@ -19,7 +19,7 @@ const SliderItem = ({
   rating,
 }: TReview) => {
   return (
-    <div className=" mt-[58px] pt-[32px] md:pt-[45px] pb-[55px] lg:pb-[75px] bg-themeBgColor rounded-[24px] lg:rounded-[30px] flex flex-col items-center justify-center">
+    <div className="mt-[30px] md:mt-[58px] pt-[32px] md:pt-[45px] pb-[55px] lg:pb-[75px] bg-themeBgColor rounded-[24px] lg:rounded-[30px] flex flex-col items-center justify-center">
       {/* [736px] */}
       <Image
         src={image}

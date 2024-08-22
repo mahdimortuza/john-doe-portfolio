@@ -50,7 +50,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <Container className="my-[100px]">
+    <Container className="py-[60px] md:py-[100px]">
       <div id="services" className="">
         <SectionTitle
           title="services"
@@ -60,7 +60,7 @@ const ServicesSection = () => {
         />
 
         {/* service cards sections  */}
-        <div className="py-[48px] md:py-[82px] grid md:grid-cols-2 lg:grid-cols-3 gap-[48px] justify-center  lg:gap-[70px]">
+        <div className="pt-[48px] md:pt-[82px] grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-[48px]  xl:gap-[70px]">
           {/* single card here  */}
 
           {services.map((item) => (
