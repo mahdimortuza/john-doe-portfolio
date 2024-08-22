@@ -21,18 +21,19 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 py-[24px] left-0 w-full bg-white z-20 shadow backdrop-blur-3xl ">
       <div className="max-w-[1290px] px-[10px] mx-auto flex justify-between items-center">
-        <Image
-          className="cursor-pointer"
-          onClick={scrollToTop}
-          src={assets.logos.mainLogo}
-          alt="logo"
-        />
+        <a href="/">
+          <Image
+            className="cursor-pointer"
+            src={assets.logos.mainLogo}
+            alt="logo"
+          />
+        </a>
         <ul className="hidden md:flex gap-[40px]">
-          <Link to="home" smooth={true} activeClass="active" spy={true}>
+          <a href="/">
             <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
               Home
             </li>
-          </Link>
+          </a>
 
           <Link to="about" smooth={true} activeClass="active" spy={true}>
             <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">

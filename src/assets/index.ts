@@ -57,5 +57,8 @@ const assets = {
     image2: require("../assets/blogs-image/2.avif"),
     image3: require("../assets/blogs-image/3.avif"),
   },
+  errorImage: {
+    image: require("../assets/404-element/404-image.svg"),
+  },
 };
 export default assets;

@@ -84,7 +84,7 @@ const BlogsSection = () => {
           <Separator className="mt-[68px]" />
           <div className="flex justify-end mt-[15px]">
             <Link
-              href="/"
+              href="/blogs"
               className={`${beVietnamPro.className} font-vietnam text-[#1A1A1A] text-[18px] font-normal flex gap-[10px] items-center justify-center w-[140px]`}
             >
               <span>View Blogs</span>
