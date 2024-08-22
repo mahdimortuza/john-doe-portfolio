@@ -56,6 +56,7 @@ const assets = {
     image1: require("../assets/blogs-image/1.png"),
     image2: require("../assets/blogs-image/2.avif"),
     image3: require("../assets/blogs-image/3.avif"),
+    banner: require("../assets/blogs-image/banner.jpeg"),
   },
   errorImage: {
     image: require("../assets/404-element/404-image.svg"),
