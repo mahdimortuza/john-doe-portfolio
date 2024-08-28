@@ -8,7 +8,7 @@ type TContainerProps = {
 const Container = ({ children, className }: TContainerProps) => {
   return (
     <div
-      className={`h-full w-full max-w-[1290px] px-[10px] mx-auto ${className}`}
+      className={`h-full w-full max-w-[1304px] px-[24px] mx-auto ${className}`}
     >
       {children}
     </div>

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   // animateScroll.scrollToTop(options);
   return (
-    <nav className="fixed top-0 py-[24px] left-0 w-full bg-white z-20 shadow backdrop-blur-3xl ">
+    <nav className="fixed top-0 py-[24px] left-0 w-full bg-white z-50 shadow backdrop-blur-3xl ">
       <div className="max-w-[1290px] px-[10px] mx-auto flex justify-between items-center">
         <a href="/">
           <Image
@@ -29,11 +29,11 @@ const Navbar = () => {
           />
         </a>
         <ul className="hidden md:flex gap-[40px]">
-          <a href="/">
+          <Link to="home" smooth={true} activeClass="active" spy={true}>
             <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
               Home
             </li>
-          </a>
+          </Link>
 
           <Link to="about" smooth={true} activeClass="active" spy={true}>
             <li className="text-[16px] font-[500] leading-[150%] text-themeGray hover:text-black pb-[8px] cursor-pointer">
@@ -77,7 +77,7 @@ const Navbar = () => {
         className={
           nav
             ? "fixed md:hidden left-0 top-0 pl-[10px] w-[60%] bg-white h-[100vh] ease-in-out duration-500 z-50"
-            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] z-30"
+            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] z-50"
         }
       >
         <Image

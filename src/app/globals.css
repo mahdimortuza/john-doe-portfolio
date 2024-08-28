@@ -92,6 +92,21 @@
   border-bottom: 3px solid black;
 }
 
+/* styles for inverted border radius  */
+/* absolute bg-white w-[50px] h-[50px] rounded-full z-50 top-0 right-[165px]  */
+
+.inverted-corner {
+  position: absolute;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 50;
+  top: -2px;
+  right: 164px;
+  box-shadow: 8px -10px 0 #f6f7fe;
+}
+
 /* Custom CSS to style the marker */
 .custom-list > li::marker {
   font-size: 1.5rem;

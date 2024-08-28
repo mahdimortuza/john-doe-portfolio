@@ -12,18 +12,21 @@ const AboutSection = () => {
           id="about"
           className="py-[58px] lg:py-[120px] flex xl:items-end flex-col-reverse items-center lg:flex-row gap-[30px] md:gap-[75px]"
         >
+          {/* about left image  */}
           <div className="relative">
+            <div className="bg-[#9db0ff] hidden md:block w-[300px] h-[240px]  absolute -bottom-[18px] -left-[18px] rounded-[18px]"></div>
             <Image
               src={assets.aboutImages.profilePicture}
               alt="profile-image"
-              className="clip-path-wave w-[380px] h-[240px] md:w-[650px] md:h-[510px] object-cover rounded-[18px]"
+              className="clip-path-wave w-[380px] h-[240px] md:w-[650px] md:h-[510px] object-cover rounded-[18px] relative z-[1]"
             />
+            <div className="inverted-corner"></div>
           </div>
 
           {/* right side content  */}
           <div className="flex flex-col gap-0 xl:gap-[26px] relative">
             {/* elegant section header  */}
-            <div className="xl:absolute md:-left-[240px] -top-[110px] md:bg-themeBgColor xl:pl-[40px] lg:pb-[15px] lg:rounded-bl-[50px]">
+            <div className="xl:absolute md:-left-[240px] z-30 -top-[110px] md:bg-themeBgColor xl:pl-[40px] lg:pb-[15px] lg:rounded-bl-[50px]">
               <h3
                 className={`${beVietnamPro.className} font-vietnam text-center md:text-left text-[14px] md:text-[20px] font-medium capitalize text-themeBlue`}
               >
