@@ -182,6 +182,19 @@
   background-color: hsl(229, 78%, 98%);
 }
 
+/* styles for blog inverted border radius  */
+.blog-inverted-corner {
+  position: absolute;
+  background-color: transparent;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: 20;
+  bottom: 22px;
+  left: 0px;
+  box-shadow: -18px 18px 0 #fff;
+}
+
 @media only screen and (max-width: 600px) {
   .custom-list > li::marker {
     font-size: 1.2rem;
