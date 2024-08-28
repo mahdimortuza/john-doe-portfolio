@@ -20,7 +20,7 @@ const AboutSection = () => {
               alt="profile-image"
               className="clip-path-wave w-[380px] h-[240px] md:w-[650px] md:h-[510px] object-cover rounded-[18px] relative z-[1]"
             />
-            <div className="inverted-corner"></div>
+            <div className="about-inverted-corner hidden xl:block"></div>
           </div>
 
           {/* right side content  */}

@@ -95,26 +95,43 @@
 /* styles for inverted border radius  */
 /* absolute bg-white w-[50px] h-[50px] rounded-full z-50 top-0 right-[165px]  */
 
-.inverted-corner {
+.about-inverted-corner {
   position: absolute;
   background-color: transparent;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  z-index: 50;
-  top: -2px;
+  z-index: 20;
+  top: 0px;
   right: 164px;
-  box-shadow: 8px -10px 0 #f6f7fe;
+  box-shadow: 44px -42px 0 #f6f7fe;
 }
 
-/* Custom CSS to style the marker */
+/* second one  */
+
+.about-inverted-corner::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 20;
+  top: 98px;
+  right: -165px;
+  box-shadow: 44px -42px 0 #f6f7fe;
+}
+
+/* box-shadow: 19px -16px 0 #f6f7fe; */
+
+/* Custom CSS to style the bullet marker */
 .custom-list > li::marker {
   font-size: 1.5rem;
   color: #2563eb;
 }
 
+/* The phone number input stretches to fill all empty space */
 .PhoneInputInput {
-  /* The phone number input stretches to fill all empty space */
   flex: 1;
   min-width: 0;
   background-color: hsl(229, 78%, 98%);
