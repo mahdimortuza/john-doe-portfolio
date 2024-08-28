@@ -92,9 +92,7 @@
   border-bottom: 3px solid black;
 }
 
-/* styles for inverted border radius  */
-/* absolute bg-white w-[50px] h-[50px] rounded-full z-50 top-0 right-[165px]  */
-
+/* styles for about inverted border radius  */
 .about-inverted-corner {
   position: absolute;
   background-color: transparent;
@@ -108,7 +106,6 @@
 }
 
 /* second one  */
-
 .about-inverted-corner::after {
   content: "";
   position: absolute;
@@ -120,6 +117,42 @@
   top: 98px;
   right: -165px;
   box-shadow: 44px -42px 0 #f6f7fe;
+}
+
+/* styles for about inverted border radius  */
+.project-inverted-corner {
+  position: absolute;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 20;
+  top: 55px;
+  left: -0px;
+  box-shadow: -20px -20px 0 #f6f7fe;
+}
+.project-inverted-corner-bottom {
+  position: absolute;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 20;
+  bottom: 57px;
+  right: 0px;
+  box-shadow: 15px 15px 0 #fff;
+}
+.project-inverted-corner-bottom::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 20;
+  bottom: -58px;
+  right: 58px;
+  box-shadow: 12px 14px 0 #fff;
 }
 
 /* box-shadow: 19px -16px 0 #f6f7fe; */

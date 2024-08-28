@@ -12,96 +12,112 @@ const products = [
     title: "saaS landing page",
     category: "Landing Page",
     image: assets.projectsImages.sassLandingPage,
+    link: "https://www.google.com",
   },
   {
     _id: "2",
     title: "education platform",
     category: "Web Design",
     image: assets.projectsImages.eduCationPlatform,
+    link: "https://www.google.com",
   },
   {
     _id: "3",
     title: "litigation app",
     category: "App Design",
     image: assets.projectsImages.mobileApp,
+    link: "https://www.google.com",
   },
   {
     _id: "4",
     title: "furniture website",
     category: "Landing Page",
     image: assets.projectsImages.furnitureLandingPage,
+    link: "https://www.google.com",
   },
   {
     _id: "5",
     title: "dog walking app",
     category: "Mobile App",
     image: assets.projectsImages.dogWalkingApp,
+    link: "https://www.google.com",
   },
   {
     _id: "6",
     title: "coffee landing page",
     category: "Landing Page",
     image: assets.projectsImages.coffeeLandingPage,
+    link: "https://www.google.com",
   },
   {
     _id: "7",
     title: "dashboard design",
     category: "Dashboard",
     image: assets.projectsImages.dashboard1,
+    link: "https://www.google.com",
   },
   {
     _id: "8",
     title: "dashboard design",
     category: "Dashboard",
     image: assets.projectsImages.dashboard2,
+    link: "https://www.google.com",
   },
   {
     _id: "9",
     title: "coffee landing page",
     category: "Web Design",
     image: assets.projectsImages.webDesign,
+    link: "https://www.google.com",
   },
   {
     _id: "10",
     title: "coffee landing page",
     category: "Web Design",
     image: assets.projectsImages.sassLandingPage,
+    link: "https://www.google.com",
   },
   {
     _id: "11",
     title: "sass landing page",
     category: "All",
     image: assets.projectsImages.sassLandingPage,
+    link: "https://www.google.com",
   },
   {
     _id: "12",
     title: "education platform",
     category: "All",
     image: assets.projectsImages.eduCationPlatform,
+    link: "https://www.google.com",
   },
   {
     _id: "13",
     title: "litigation mobile",
     category: "All",
     image: assets.projectsImages.mobileApp,
+    link: "https://www.google.com",
   },
   {
     _id: "14",
     title: "furniture website",
     category: "All",
     image: assets.projectsImages.furnitureLandingPage,
+    link: "https://www.google.com",
   },
   {
     _id: "15",
     title: "dog walking app",
     category: "All",
     image: assets.projectsImages.dogWalkingApp,
+    link: "https://www.google.com",
   },
   {
     _id: "16",
     title: "coffee landing page",
     category: "All",
     image: assets.projectsImages.coffeeLandingPage,
+    link: "https://www.google.com",
   },
 ];
 
@@ -171,6 +187,7 @@ const ProjectsSection = () => {
                     category={items.category}
                     image={items.image}
                     title={items.title}
+                    link={items.link}
                   />
                 </TabsContent>
               ))}
