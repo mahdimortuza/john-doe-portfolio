@@ -1,5 +1,6 @@
 import assets from "@/assets";
 import Container from "@/components/Container";
+import CountNumber from "@/components/ui/countNumber";
 import CustomHoverBtn from "@/components/ui/customHoverBtn";
 import { beVietnamPro, dmSans, outfit } from "@/components/ui/fonts";
 import { Plus } from "lucide-react";
@@ -97,7 +98,7 @@ const HeroSection = () => {
             <div className="flex flex-col gap-[22px] md:gap-[30px] absolute -right-[5px] xl:-right-[80px] pl-[8px] md:pl-[28px] pt-[10px] md:pt-[38px] bottom-0 bg-white rounded-ss-[25px] md:rounded-ss-[40px]">
               <div className="flex flex-col gap-[0px]">
                 <h2 className=" text-[22px] md:text-[32px] font-semibold">
-                  355+
+                  <CountNumber start={0} end={355} duration={1.5} />+
                 </h2>
                 <p
                   className={`${dmSans.variable} text-[11px] md:text-[16px] font-dmSans text-themeGray font-normal`}
@@ -108,7 +109,7 @@ const HeroSection = () => {
 
               <div className="flex flex-col gap-[0px]">
                 <h2 className=" text-[22px] md:text-[32px] font-semibold">
-                  200+
+                  <CountNumber start={0} end={200} duration={2.75} />+
                 </h2>
                 <p
                   className={`${dmSans.variable} text-[11px] md:text-[16px] font-dmSans text-themeGray font-normal`}
@@ -119,7 +120,7 @@ const HeroSection = () => {
 
               <div className="flex flex-col gap-[0px]">
                 <h2 className=" text-[22px] md:text-[32px] font-semibold">
-                  96%
+                  <CountNumber start={0} end={96} duration={3} />%
                 </h2>
                 <p
                   className={`${dmSans.variable} text-[11px] md:text-[16px] font-dmSans text-themeGray font-normal`}

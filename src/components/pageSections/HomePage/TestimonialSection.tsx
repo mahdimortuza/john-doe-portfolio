@@ -75,7 +75,7 @@ const TestimonialSection = () => {
       {/* slider starts here  */}
       {/* [738px] */}
       <div className="w-full xl:w-[1000px] mx-auto mt-[0px]">
-        <Carousel className="">
+        <Carousel className="" opts={{ align: "start", loop: true }}>
           <CarouselContent>
             {reviews.map((item) => (
               <CarouselItem key={item._id}>
