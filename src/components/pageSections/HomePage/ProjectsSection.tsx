@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const products = [
   {
     _id: "1",
-    title: "saaS landing page",
+    title: "sass landing page",
     category: "Landing Page",
     image: assets.projectsImages.sassLandingPage,
     link: "https://www.google.com",

@@ -3,11 +3,12 @@ import assets from "@/assets";
 import { Separator } from "@/components/ui/separator";
 import { AlignJustify, X } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -18,8 +19,30 @@ const Navbar = () => {
   };
 
   // animateScroll.scrollToTop(options);
+  // Function to handle the scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 5) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+
+    // Add event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="fixed top-0 py-[24px] left-0 w-full bg-white z-50 shadow backdrop-blur-3xl ">
+    <nav
+      className={`fixed top-0 left-0 w-full py-[24px] bg-white z-50 backdrop-blur-3xl transition-shadow duration-300 ${
+        shadow ? "shadow" : "shadow-none"
+      }`}
+    >
       <div className="max-w-[1290px] px-[10px] mx-auto flex justify-between items-center">
         <a href="/">
           <Image
@@ -72,7 +95,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* mobile navigation menu  */}
+      {/* Mobile navigation menu */}
       <div
         className={
           nav
@@ -89,7 +112,7 @@ const Navbar = () => {
 
         <Separator />
 
-        <ul className=" mt-5">
+        <ul className="mt-5">
           <Link to="home" smooth={true} activeClass="active" spy={true}>
             <li
               onClick={handleNav}

@@ -18,7 +18,7 @@ const reviews = [
     image: assets.reviewImages.image1,
     description:
       "Working with him was a game-changer for our project. Their exceptional UI/UX design skills and attention to detail brought our vision to life. The final product exceeded our expectations, delivering both aesthetics and functionality.",
-    rating: 3.2,
+    rating: 5,
   },
   {
     _id: 2,
@@ -27,7 +27,7 @@ const reviews = [
     image: assets.reviewImages.image2,
     description:
       "Working with him was a game-changer for our project. Their exceptional UI/UX design skills and attention to detail brought our vision to life. The final product exceeded our expectations, delivering both aesthetics and functionality.",
-    rating: 4.2,
+    rating: 5,
   },
   {
     _id: 3,
@@ -48,13 +48,13 @@ const reviews = [
     rating: 4.5,
   },
   {
-    _id: 5,
+    _id: 4,
     title: "mari doe",
     position: "HR",
     image: assets.reviewImages.image5,
     description:
       "Working with him was a game-changer for our project. Their exceptional UI/UX design skills and attention to detail brought our vision to life. The final product exceeded our expectations, delivering both aesthetics and functionality.",
-    rating: 2.8,
+    rating: 5,
   },
   {
     _id: 6,
@@ -63,7 +63,7 @@ const reviews = [
     image: assets.reviewImages.image6,
     description:
       "Working with him was a game-changer for our project. Their exceptional UI/UX design skills and attention to detail brought our vision to life. The final product exceeded our expectations, delivering both aesthetics and functionality.",
-    rating: 1.5,
+    rating: 4,
   },
 ];
 

@@ -55,7 +55,7 @@ const BlogCard = ({ title, description, image, date }: TBlog) => {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[600px] h-[500px] overflow-auto">
+      <DialogContent className="sm:max-w-[600px] lg:max-w-[800px] h-[500px] overflow-auto">
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
           <DialogDescription>
@@ -65,7 +65,7 @@ const BlogCard = ({ title, description, image, date }: TBlog) => {
               className="w-[50%] h-auto rounded-md mt-[30px] mx-auto"
             />
             <div
-              className={`${beVietnamPro.className} font-vietnam mt-[16px] text-themeGray text-[15px] text-left`}
+              className={`${beVietnamPro.className} font-vietnam mt-[16px] text-themeGray text-[15px] leading-[24px] text-left`}
             >
               {description}
             </div>

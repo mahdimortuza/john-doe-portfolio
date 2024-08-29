@@ -20,9 +20,9 @@ const ProjectCard = ({ image, title, link }: TProject) => {
       <div className="project-inverted-corner"></div>
 
       <span
-        className={`${beVietnamPro.className} title-bg font-vietnam -top-1 rounded-br-[20px] text-[26px] pl-[5px] pb-[24px] pr-[20px] pt-[5px] relative z-10 bg-themeBgColor capitalize`}
+        className={`${beVietnamPro.className} title-bg font-vietnam  rounded-br-[20px] font-medium text-[27px] pl-[5px] py-[12px] pb-[19px] pr-[20px] pt-[5px] relative z-10 bg-themeBgColor capitalize items-center`}
         style={{
-          boxShadow: "inset -5px 0 10px -2px rgba(0, 0, 0, 0.3)",
+          boxShadow: "inset -5px 0 10px -2px rgba(0, 0, 0, 0.1)",
         }}
       >
         {title}

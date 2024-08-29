@@ -1,5 +1,7 @@
+"use client";
 import assets from "@/assets";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import Container from "../Container";
 import { beVietnamPro, dmSans } from "../ui/fonts";
 import { Separator } from "../ui/separator";
@@ -10,13 +12,23 @@ const Footer = () => {
       <Container>
         <div>
           <ul
-            className={`${beVietnamPro.className} font-vietnam text-themeMenu hidden md:flex gap-[40px] items-center justify-center  `}
+            className={`${beVietnamPro.className} font-vietnam text-themeMenu hidden md:flex gap-[36px] items-center justify-center text-[#DCDEE5] text-[18px] font-medium `}
           >
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Blogs</li>
+            <Link to="home" smooth={true} className="cursor-pointer p-1">
+              <li>Home</li>
+            </Link>
+            <Link to="about" smooth={true} className="cursor-pointer p-1">
+              <li>About</li>
+            </Link>
+            <Link to="services" smooth={true} className="cursor-pointer p-1">
+              <li>Services</li>
+            </Link>
+            <Link to="projects" smooth={true} className="cursor-pointer p-1">
+              <li>Projects</li>
+            </Link>
+            <Link to="blogs" smooth={true} className="cursor-pointer p-1">
+              <li>Blogs</li>
+            </Link>
           </ul>
 
           <Separator className=" lg:mt-[24px]" />
