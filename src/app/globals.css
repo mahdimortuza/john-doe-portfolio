@@ -155,12 +155,23 @@
   box-shadow: 12px 14px 0 #fff;
 }
 
-/* box-shadow: 19px -16px 0 #f6f7fe; */
-
 /* Custom CSS to style the bullet marker */
 .custom-list > li::marker {
   font-size: 1.5rem;
   color: #2563eb;
+}
+
+/* styles for carousel slider  */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  gap: 20px;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
 
 /* The phone number input stretches to fill all empty space */

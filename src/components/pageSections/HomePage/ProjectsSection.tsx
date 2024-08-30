@@ -5,6 +5,7 @@ import ProjectCard from "@/components/ui/projectCard";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import SectionTitle from "@/components/ui/sectionTitle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { motion } from "framer-motion";
 
 const products = [
   {
@@ -151,12 +152,10 @@ const ProjectsSection = () => {
         <div id="projects">
           <SectionTitle title="Projects" subTitle="digital product showcase" />
 
-          {/*  */}
           <Tabs
             defaultValue="All"
             className="flex flex-col items-center w-full gap-[10px] md:gap-[50px] mt-[10px] md:mt-[50px]"
           >
-            {/* Tab buttons with horizontal scroll */}
             <TabsList className=" ">
               <ScrollArea className="w-[360px] md:w-full whitespace-nowrap rounded-md ">
                 {categories.map((item) => (
@@ -172,23 +171,23 @@ const ProjectsSection = () => {
               </ScrollArea>
             </TabsList>
 
-            {/*   */}
-
-            {/* Tab contents */}
             <div className="grid grid-cols-1 mt-[0px] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px] w-full justify-items-center items-center">
-              {products.map((items) => (
-                <TabsContent
-                  key={items._id}
-                  value={items.category}
-                  className=""
-                >
-                  <ProjectCard
-                    _id={items._id}
-                    category={items.category}
-                    image={items.image}
-                    title={items.title}
-                    link={items.link}
-                  />
+              {products.map((item) => (
+                <TabsContent key={item._id} value={item.category} className="">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <ProjectCard
+                      _id={item._id}
+                      category={item.category}
+                      image={item.image}
+                      title={item.title}
+                      link={item.link}
+                    />
+                  </motion.div>
                 </TabsContent>
               ))}
             </div>

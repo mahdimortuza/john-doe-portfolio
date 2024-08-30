@@ -4,7 +4,7 @@ import Image from "next/image";
 import { beVietnamPro, dmSans } from "./fonts";
 
 export type TReview = {
-  _id: number;
+  _id: string;
   title: string;
   position: string;
   image: string;
