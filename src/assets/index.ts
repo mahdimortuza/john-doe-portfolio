@@ -61,5 +61,8 @@ const assets = {
   errorImage: {
     image: require("../assets/404-element/404-image.svg"),
   },
+  ratingImage: {
+    image: require("../assets/star-rating/star-full.png"),
+  },
 };
 export default assets;

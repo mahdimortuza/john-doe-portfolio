@@ -131,7 +131,7 @@ const TestimonialSection = () => {
           </button>
         </div>
 
-        <div className="embla__dots flex justify-center mx-auto space-x-[-15px]">
+        <div className="embla__dots flex justify-center mx-auto space-x-2 mt-[32px]">
           {scrollSnaps.map((_, index) => (
             <button
               key={index}
@@ -143,9 +143,9 @@ const TestimonialSection = () => {
               <div
                 className={`${
                   index === selectedIndex
-                    ? "w-[30px] h-[10px]  bg-themeBlue"
-                    : "w-[50px] h-[50px]"
-                } rounded-full transition-all duration-300 ease-in-out`}
+                    ? "w-[24px] h-[8px] bg-themeBlue"
+                    : "w-[8px] h-[8px] bg-[#DAE1FF]"
+                } rounded-full transition-all duration-700 ease-in-out`}
               >
                 <Dot className="w-full h-full" />
               </div>

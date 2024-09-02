@@ -1,7 +1,14 @@
-import { Rating } from "@smastrom/react-rating";
+import { Rating, ThinRoundedStar } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import Image from "next/image";
 import { beVietnamPro, dmSans } from "./fonts";
+
+const includedShapesStyles = {
+  itemShapes: ThinRoundedStar,
+  activeFillColor: "#F6C15B",
+  inactiveFillColor: "#ffe2c0",
+  style: { marginRight: "20px" },
+};
 
 export type TReview = {
   _id: string;
@@ -11,6 +18,7 @@ export type TReview = {
   description: string;
   rating: number;
 };
+
 const SliderItem = ({
   title,
   position,
@@ -20,7 +28,6 @@ const SliderItem = ({
 }: TReview) => {
   return (
     <div className="mt-[30px] md:mt-[58px] pt-[32px] md:pt-[45px] pb-[55px] lg:pb-[75px] bg-themeBgColor rounded-[24px] lg:rounded-[30px] flex flex-col items-center justify-center">
-      {/* [736px] */}
       <Image
         src={image}
         alt="image"
@@ -37,12 +44,19 @@ const SliderItem = ({
         {position}
       </h2>
       <p
-        className={`${dmSans.className} font-dmSans mt-[16px] text-center text-themeGray px-[44px] lg:px-[60px] text-[16px] md:text-[22px] italic font-normal leading-[150%]`}
+        className={`${dmSans.className} font-dmSans mt-[16px] text-center text-themeGray px-[44px] lg:px-[60px] text-[16px] md:text-[22px] font-normal leading-[150%] italic`}
+        style={{ fontStyle: "italic" }}
       >
         {description}
       </p>
       <div className="mt-[16px]">
-        <Rating style={{ maxWidth: 100 }} value={rating} readOnly />
+        <Rating
+          style={{ maxWidth: 140 }}
+          value={rating}
+          itemStyles={includedShapesStyles}
+          spaceBetween="small"
+          readOnly
+        />
       </div>
     </div>
   );

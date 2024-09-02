@@ -24,13 +24,13 @@ const AboutSection = () => {
           </div>
 
           {/* right side content  */}
-          <div className="flex flex-col gap-0 xl:gap-[26px] relative">
+          <div className="flex flex-col gap-0 xl:gap-[15px] relative">
             {/* elegant section header  */}
-            <div className="xl:absolute md:-left-[240px] z-30 -top-[110px] md:bg-themeBgColor xl:pl-[40px] lg:pb-[15px] lg:rounded-bl-[50px]">
+            <div className="xl:absolute md:-left-[288px] z-30 -top-[115px] md:bg-themeBgColor xl:pl-[40px] lg:pb-[0px] lg:rounded-bl-[50px]">
               <h3
                 className={`${beVietnamPro.className} font-vietnam text-center md:text-left text-[14px] md:text-[20px] font-medium capitalize text-themeBlue`}
               >
-                about
+                about me
               </h3>
 
               <h1

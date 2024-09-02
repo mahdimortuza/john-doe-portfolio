@@ -6,8 +6,8 @@ import Marquee from "react-fast-marquee";
 
 const ClientSection = () => {
   return (
-    <div id="client" className=" bg-themeBlack">
-      <Container className="">
+    <div id="client" className="bg-themeBlack">
+      <Container>
         <div className="py-[32px] flex flex-col md:flex-row md:items-center gap-[20px] lg:gap-[70px]">
           <div
             className={`${outfit.className} font-outfit font-semibold capitalize text-white`}
@@ -20,44 +20,45 @@ const ClientSection = () => {
             </h1>
           </div>
 
-          {/* marque  */}
-          <div className="flex items-center">
+          {/* marquee */}
+          <div className="flex items-center w-full overflow-hidden">
             <div className="w-[2px] bg-[#C0C2CC] h-[80px]"></div>
-            {/* moving marque here */}
+            {/* moving marquee here */}
             <Marquee
               pauseOnHover
-              className="w-[300px] sm:w-[400px] md:w-[600px] lg:w-[800px] xl:w-[1000px]"
+              className="w-full"
+              gradient={false}
+              speed={40}
             >
-              <Image
-                className="ml-[40px]"
-                src={assets.clientLogos.google}
-                alt="logo"
-              />
-              <Image
-                className="ml-[40px]"
-                src={assets.clientLogos.upWork}
-                alt="logo"
-              />
-              <Image
-                className="ml-[40px]"
-                src={assets.clientLogos.linkedin}
-                alt="logo"
-              />
-              <Image
-                className="ml-[40px]"
-                src={assets.clientLogos.dribble}
-                alt="logo"
-              />
-              <Image
-                className="ml-[40px]"
-                src={assets.clientLogos.fiver}
-                alt="logo"
-              />
-              <Image
-                className="ml-[40px]"
-                src={assets.clientLogos.linkedin}
-                alt="logo"
-              />
+              <div className="flex items-center">
+                <Image
+                  className="w-auto h-[32px] ml-[40px] xl:ml-[95px] "
+                  src={assets.clientLogos.google}
+                  alt="Google logo"
+                />
+                <Image
+                  className="w-auto h-[32px] ml-[40px] xl:ml-[95px]"
+                  src={assets.clientLogos.upWork}
+                  alt="UpWork logo"
+                />
+                <Image
+                  className="w-auto h-[32px] ml-[40px] xl:ml-[95px]"
+                  src={assets.clientLogos.linkedin}
+                  alt="LinkedIn logo"
+                />
+                <Image
+                  className="w-auto h-[32px] ml-[40px] xl:ml-[95px]"
+                  src={assets.clientLogos.dribble}
+                  alt="Dribble logo"
+                />
+                <Image
+                  className="w-auto h-[32px] ml-[40px] xl:ml-[95px]"
+                  src={assets.clientLogos.fiver}
+                  alt="Fiverr logo"
+                />
+
+                {/* Add more images as needed */}
+              </div>
             </Marquee>
           </div>
         </div>

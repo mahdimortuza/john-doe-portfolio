@@ -154,7 +154,7 @@ const ProjectsSection = () => {
 
           <Tabs
             defaultValue="All"
-            className="flex flex-col items-center w-full gap-[10px] md:gap-[50px] mt-[10px] md:mt-[50px]"
+            className="flex flex-col items-center w-full gap-[10px] md:gap-[50px] mt-[10px] md:mt-[16px]"
           >
             <TabsList className=" ">
               <ScrollArea className="w-[360px] md:w-full whitespace-nowrap rounded-md ">
@@ -171,7 +171,7 @@ const ProjectsSection = () => {
               </ScrollArea>
             </TabsList>
 
-            <div className="grid grid-cols-1 mt-[0px] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px] w-full justify-items-center items-center">
+            <div className="grid grid-cols-1 mt-[32px] md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-[36px] gap-y-[40px] lg:gap-y-[90px] w-full justify-items-center items-center">
               {products.map((item) => (
                 <TabsContent key={item._id} value={item.category} className="">
                   <motion.div
