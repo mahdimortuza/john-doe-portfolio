@@ -2,6 +2,7 @@ import assets from "@/assets";
 import Container from "@/components/Container";
 import CountNumber from "@/components/ui/countNumber";
 import CustomHoverBtn from "@/components/ui/customHoverBtn";
+import ExploreButton from "@/components/ui/exploreButton";
 import { beVietnamPro, dmSans, outfit } from "@/components/ui/fonts";
 import { Plus } from "lucide-react";
 import Image from "next/image";
@@ -42,11 +43,10 @@ const HeroSection = () => {
             </p>
 
             <div className="flex gap-[20px] md:gap-[32px] items-center">
-              <CustomHoverBtn />
+              {/* <CustomHoverBtn /> */}
 
-              <span className="text-[16px] md:text-[18px] font-medium text-themeBlue underline hover:text-black cursor-pointer">
-                Explore Projects
-              </span>
+              <CustomHoverBtn />
+              <ExploreButton />
             </div>
           </div>
 
@@ -125,7 +125,6 @@ const HeroSection = () => {
                 <p
                   className={`${dmSans.variable} text-[11px] md:text-[16px] font-dmSans text-themeGray font-normal`}
                 >
-                  {" "}
                   Positive Reviews
                 </p>
               </div>
