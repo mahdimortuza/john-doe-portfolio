@@ -97,7 +97,6 @@ const TestimonialSection = () => {
   return (
     <Container className="py-[60px] md:py-[100px]">
       <SectionTitle title="Testimonial" subTitle="What My Customers Say" />
-
       <div className="w-full xl:w-[1000px] mx-auto mt-[0px] relative">
         <div className="embla" ref={emblaRef}>
           <div className="embla__container">
